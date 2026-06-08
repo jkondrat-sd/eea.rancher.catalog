@@ -88,7 +88,7 @@ services:
       io.rancher.container.hostname_override: container_name
 
   pg-0:
-    image: docker.io/bitnami/postgresql-repmgr:13
+    image: docker.io/soldevelo/postgresql-repmgr:13
     volumes:
       - keycloak_postgres0_data:/bitnami/postgresql
     mem_limit: 4g
@@ -113,7 +113,7 @@ services:
 
 
   pg-1:
-    image: docker.io/bitnami/postgresql-repmgr:13
+    image: docker.io/soldevelo/postgresql-repmgr:13
     volumes:
       - keycloak_postgres1_data:/bitnami/postgresql
     mem_limit: 4g

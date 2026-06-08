@@ -69,7 +69,7 @@ services:
       io.rancher.scheduler.affinity:host_label_ne: reserved=yes
 
   pg-0:
-    image: docker.io/bitnami/postgresql-repmgr:13
+    image: docker.io/soldevelo/postgresql-repmgr:13
     volumes:
       - keycloak_postgres_pg0_data:/bitnami/data
     environment:
@@ -92,7 +92,7 @@ services:
 
 
   pg-1:
-    image: docker.io/bitnami/postgresql-repmgr:13
+    image: docker.io/soldevelo/postgresql-repmgr:13
     volumes:
       - keycloak_postgres_pg1_data:/bitnami/data
     environment:
